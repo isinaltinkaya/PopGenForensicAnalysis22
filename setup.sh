@@ -3,10 +3,9 @@ set -euo pipefail
 MAIN=$(realpath ${1})
 PRG=${MAIN}/programs
 
-mkdir -pv ${MAIN}/vbox/iso
-
-curl --location --remote-name 'https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x64.iso?t=a9a567c2-8002-485b-bf04-5be470d77869&e=1669272723&h=35e3c584c2bdb2f605e923dcbec62bfc3d05f8bcb412f0786aa63ae6b5b0edb4' -O ${MAIN}/vbox/iso/Win10_22H2_English_x64.iso
-
+#enable for installing windows10 iso to use with virtualbox
+#mkdir -pv ${MAIN}/vbox/iso
+#curl --location --remote-name 'https://software.download.prss.microsoft.com/dbazure/Win10_22H2_English_x64.iso?t=a9a567c2-8002-485b-bf04-5be470d77869&e=1669272723&h=35e3c584c2bdb2f605e923dcbec62bfc3d05f8bcb412f0786aa63ae6b5b0edb4' 
 
 mkdir -pv ${PRG}
 
@@ -59,8 +58,6 @@ wget -P doc/ https://www.fluxus-engineering.com/Network10200_user_guide.pdf
 #* Structure: https://web.stanford.edu/group/pritchardlab/structure.html
 mkdir -pv ${PRG}/network
 cd ${PRG}/network
-#mkdir -v gui/
-#mkdir -v console/
 
 #with gui
 wget -P gui/ https://web.stanford.edu/group/pritchardlab/structure_software/release_versions/v2.3.4/release/structure_linux_frontend.tar.gz
