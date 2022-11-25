@@ -4,7 +4,7 @@ My notes and scripts for the course Population Genetics and Forensic Analysis 20
 ## Usage
 
 ```
-git clone git@github.com:isinaltinkaya/PopGenForensicAnalysis22.git;
+git clone https://github.com/isinaltinkaya/PopGenForensicAnalysis22.git;
 cd PopGenForensicAnalysis22;
 bash setup.sh .
 ```
